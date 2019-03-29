@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>CompImg</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">CompImagem</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navb">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" active>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="upload.html">Upload foto</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+    <hr>
+    <h2 id="titulo" class="text-center">Faça o Upload da Foto</h2>
+    <input name="_analise.png" id="file-chooser" type="file" accept="image/*">
+    <button class="btn btn-info" id="upload-button">Adicionar foto</button>
+    <div id="results"></div>
+     <div class="container">
+      <h2 class="mt-5">Pessoas Identificadas</h2>
+    </div>
+
+    <div class="container">
+      <table class="table" id="tabela-site">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Foto</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Face Match</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.19.0.min.js"></script>
+    <script src="js/importa-dados.js"></script>
+    <script src="js/upload.js"></script>
+  </body>
+</html>
