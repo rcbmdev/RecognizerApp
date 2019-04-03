@@ -15,9 +15,9 @@
 		console.log(name);
 		if (file) {            
 			AWS.config.update({
-				"accessKeyId": "AKIAJYUIYU3CBFFJ4I5Q",
-				"secretAccessKey": "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",
-				"region": "us-east-1"
+				"accessKeyId": "",
+				"secretAccessKey": "",
+				"region": ""
 			});
 			var s3 = new AWS.S3();
 			var params = {
